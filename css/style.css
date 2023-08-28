@@ -304,3 +304,35 @@ ul {
     margin-bottom: 5px;
 }
 
+
+/****** Activités ***********/
+
+.activites {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.activites-cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 30px;
+}
+
+.activites-cards .card {
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.activites-cards .card-content {
+    padding-left: 15px;
+}
