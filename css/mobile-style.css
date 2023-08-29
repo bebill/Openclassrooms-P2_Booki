@@ -1,5 +1,224 @@
 /****** Media queries ***********/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    /****** General ***********/
+    .main-container {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    /****** Header ***********/
+    .site-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        margin-top: 20px;
+        position: relative;
+        width: 100%;
+        border-bottom-style: solid;
+        border-bottom-color: var(--main-bg-color);
+    }
+
+    .navbar-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .navbar-link {
+        padding: 20px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar-link:hover:before {
+        display: none;
+    }
+
+    .navbar-link:hover:after {
+        background-color: var(--main-color);
+        content: "";
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+    }
+
+    /****** Research ***********/
+    .research {
+        margin: 15px;
+    }
+
+    .research-title h1 {
+        font-size: 20px;
+    }
+
+    .research-input {
+        justify-content: center;
+    }
+
+    .research-input-icon {
+        padding: 15px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .research-input-text {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .research-input-btn i {
+        display: block;
+        padding: 15px;
+    }
+
+    .research-input-btn {
+        border-radius: 0 15px 15px 0;
+        padding: 2px;
+    }
+
+    .research-input-btn:hover {
+        border-radius: 15px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+    }
+
+    .research-filters {
+        margin-top: 30px;
+        display: block;
+    }
+
+    .research-filters-title {
+        font-size: 16px;
+    }
+
+    .research-filters-list {
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .research-filters-cat {
+        font-size: 13px;
+        margin: 5px;
+    }
+
+    .research-filters-cat i {
+        padding-right: 8px;
+    }
+
+    .research-info i {
+        font-size: 10px;
+        margin-right: 10px;
+        width: 20px;
+        height: 17px;
+    }
+
+    /****** Hebergements And Populaires ***********/
+    .section-title {
+        font-size: 20px;
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
+        padding: 15px;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background-color: transparent;
+    }
+
+    /****** Hebergements ***********/
+    .hebergements-title {
+        margin-top: 15px;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+    }
+
+    .hebergements-cards .card {
+        margin: 7px 0;
+    }
+
+    .afficher-plus {
+        margin-top: 8px;
+    }
+
+    /****** Populaires ***********/
+    .populaires {
+        margin-top: 0;
+    }
+
+    .populaires-title {
+        margin-top: 15px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    /****** Activités ***********/
+    .activites {
+        padding: 15px;
+    }
+
+    .activites-cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .activites-cards .card {
+        margin: 8px 0;
+        padding-bottom: 5px;
+    }
+
+    .activites-cards img {
+        height: 135px;
+    }
+
+    .activites-cards .card-title {
+        margin: 15px 0;
+    }
+
+    /****** Footer ***********/
+    .site-footer {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: auto;
+    }
+
+    .footer-section-title h3 {
+        margin-top: 30px;
+    }
+
 }
