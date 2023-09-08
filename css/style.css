@@ -230,11 +230,12 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
 .hebergements-cards .card {
-    height: 90%;
-    margin: 10px;
+    height: 95%;
 }
 
 .hebergements-cards img {

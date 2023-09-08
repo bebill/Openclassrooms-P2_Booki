@@ -28,14 +28,21 @@
     .research-filters {
         margin-top: 15px;
         font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .research-filters-list {
         margin-top: 0;
+        padding-left: 0;
     }
 
     .research-filters-cat {
         padding-right: 10px;
+    }
+
+    .research-filters-cat:first-child {
+        margin-left: 0;
     }
 
     /****** Hebergements And Populaires ***********/
